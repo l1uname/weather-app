@@ -1,0 +1,83 @@
+.forecastItem {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    max-width: 165px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #424242;
+    color: #fff;
+    margin: 1px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.dateContainer {
+    display: flex;
+    justify-content: space-between;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+}
+
+.hourDiv,
+.dayDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hour,
+.day,
+.dateNum {
+    font-size: 1.5em;
+}
+
+.IconTempDescription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IconTempDescription img {
+    margin-right: 10px;
+}
+
+.temp {
+    font-size: 1.2em;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.description {
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.feelsLike {
+    grid-row: 3;
+}
+
+.feelsLike,
+.tempMin,
+.tempMax,
+.windSpeed,
+.humidity {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 320px) {
+    .forecastItem {
+        margin: 0;
+    }
+
+    .temp {
+        font-size: 1em;
+    }
+
+    .hour,
+    .day,
+    .dateNum {
+        font-size: 1.2em;
+    }
+}
