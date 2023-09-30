@@ -115,7 +115,7 @@ function Searchbar() {
                     <input type='text'
                            className={styles.searchInput}
                            autoFocus
-                           placeholder={'Search for a city...'}
+                           placeholder={'Search city...'}
                            onChange={handleInputChange}
                            onFocus={handleInputFocus}
                            value={inputValue}
